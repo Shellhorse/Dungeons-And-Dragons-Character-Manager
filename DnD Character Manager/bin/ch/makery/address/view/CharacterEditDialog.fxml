@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="655" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.CharacterEditDialogController">
+   <children>
+    <Button id="button" text="Delete" onAction="#handleDeleteCharacter" prefWidth="75.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"/>
+      <GridPane hgap="5.0" layoutX="-142.0" layoutY="-243.0" vgap="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" halignment="CENTER" maxWidth="288.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" halignment="CENTER" maxWidth="288.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" halignment="CENTER" maxWidth="288.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" halignment="CENTER" maxWidth="288.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" halignment="CENTER" maxWidth="288.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" halignment="CENTER" maxWidth="288.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" halignment="CENTER" maxWidth="288.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" halignment="CENTER" maxWidth="288.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" halignment="CENTER" maxWidth="288.0" minWidth="10.0" prefWidth="126.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="17.0" valignment="CENTER" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="17.0" valignment="CENTER" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="17.0" valignment="TOP" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="17.0" valignment="CENTER" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="17.0" valignment="CENTER" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="17.0" valignment="TOP" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="17.0" valignment="TOP" prefHeight="400.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Label text="Name" />
+            <Label text="Race" GridPane.rowIndex="1" />
+            <Label text="Background" GridPane.columnIndex="2"/>
+            <Label text="Alignment" GridPane.rowIndex="1" GridPane.columnIndex="2" />
+            <Label text="Class &amp; Level (Ex Fighter 1)" GridPane.columnIndex="4"/>
+            <Label text="Experience" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label text="Proficiency Bonus" GridPane.columnIndex="6" />
+            <Label text="Initiative" GridPane.rowIndex="1" GridPane.columnIndex="6" />
+            <Label text="Speed" GridPane.columnIndex="8" />
+            <Label text="Hit Dice" GridPane.rowIndex="1" GridPane.columnIndex="8" />
+            <Label text="Current HP" GridPane.rowIndex="2" GridPane.columnIndex="8" />
+            <Label text="Temporary HP" GridPane.rowIndex="2" GridPane.columnIndex="9" />
+            <Label text="Saving Throws" GridPane.rowIndex="5" />
+            <Label text="Skills" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+            <Label text="Death Saves" GridPane.rowIndex="5" GridPane.columnIndex="2" />
+            <Label text="Attacks" GridPane.rowIndex="5" GridPane.columnIndex="3" />
+            <Label text="Proficiencies/Languages" GridPane.rowIndex="5" GridPane.columnIndex="4" />
+            <Label text="Features &amp; Traits" GridPane.rowIndex="5" GridPane.columnIndex="5" />
+            <Label text="Equipment" GridPane.rowIndex="5" GridPane.columnIndex="6" />
+            <Label text="Backstory" GridPane.rowIndex="5" GridPane.columnIndex="7" />
+            <TextField fx:id="firstNameField" GridPane.columnIndex="1" />
+            <TextField fx:id="RaceField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="BackgroundField" GridPane.columnIndex="3"/>
+            <TextField fx:id="AlignmentField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="ClassLevelField" GridPane.columnIndex="5"  />
+            <TextField fx:id="ExperienceField" GridPane.columnIndex="5" GridPane.rowIndex="1"/>
+            <TextField fx:id="profBonusField" GridPane.columnIndex="7" />
+            <TextField fx:id="initiativeField" GridPane.rowIndex="1" GridPane.columnIndex="7" />
+            <TextField fx:id="speedField" GridPane.columnIndex="9" />
+            <TextField fx:id="hitDiceField" GridPane.rowIndex="1" GridPane.columnIndex="9" />
+            <TextField fx:id="currentHPField" GridPane.rowIndex="3" GridPane.columnIndex="8" />
+            <TextField fx:id="tempHPField" GridPane.rowIndex="3" GridPane.columnIndex="9" />
+            <TextField fx:id="savingThrowsField" GridPane.rowIndex="6" />
+            <TextField fx:id="skillsField" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+            <TextField fx:id="deathSavesField" GridPane.rowIndex="6" GridPane.columnIndex="2" />
+            <TextField fx:id="attacksField" GridPane.rowIndex="6" GridPane.columnIndex="3" />
+            <TextField fx:id="otherProfsField" GridPane.rowIndex="6" GridPane.columnIndex="4" />
+            <TextField fx:id="featuresTraitsField" GridPane.rowIndex="6" GridPane.columnIndex="5" />
+            <TextField fx:id="equipmentField" GridPane.rowIndex="6" GridPane.columnIndex="6" />
+            <TextField fx:id="backstoryField" GridPane.rowIndex="6" GridPane.columnIndex="7" />
+            
+            
+            
+            	 <!-- Str -->
+           		 <Label text="Str" Alignment="CENTER" GridPane.rowIndex="2" />
+            <ImageView fitHeight="73.0" fitWidth="75.0" GridPane.rowIndex="3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../resources/images/round_border.png" />
+                     </image>
+                  </ImageView>
+            <TextField fx:id="strengthField" maxWidth="45.0" Alignment="CENTER" GridPane.rowIndex="3"/>
+            
+                  <!-- Dex -->
+                  <Label text="Dex" GridPane.columnIndex="1" Alignment="CENTER" GridPane.rowIndex="2" />
+            <ImageView fitHeight="73.0" fitWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../resources/images/round_border.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="dexterityField" maxWidth="45.0" Alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                  
+                  <!-- Con -->
+                  <Label text="Con" GridPane.columnIndex="2" Alignment="CENTER" GridPane.rowIndex="2" />
+			<ImageView fitHeight="73.0" fitWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../resources/images/round_border.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="constitutionField" maxWidth="45.0" Alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+                  
+                  <!-- Int -->
+                  <Label text="Int" GridPane.columnIndex="3" Alignment="CENTER" GridPane.rowIndex="2" />
+            <ImageView fitHeight="73.0" fitWidth="75.0" GridPane.columnIndex="3" GridPane.rowIndex="3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../resources/images/round_border.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="intelligenceField" maxWidth="45.0" Alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+                  
+                  <!-- Wis -->
+                  <Label text="Wis" GridPane.columnIndex="4" Alignment="CENTER" GridPane.rowIndex="2" />
+            <ImageView fitHeight="73.0" fitWidth="75.0" GridPane.columnIndex="4" GridPane.rowIndex="3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../resources/images/round_border.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="wisdomField" maxWidth="45.0" Alignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+                  
+                  <!-- Cha -->
+                  <Label text="Cha" GridPane.columnIndex="5" Alignment="CENTER" GridPane.rowIndex="2" />
+            <ImageView fitHeight="73.0" fitWidth="75.0" GridPane.columnIndex="5" GridPane.rowIndex="3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../resources/images/round_border.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="charismaField" maxWidth="45.0" Alignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="3"/>
+                  
+                  <!-- Armor -->
+           		 <Label text="Armor" Alignment="CENTER" GridPane.rowIndex="2" GridPane.columnIndex="6"/>
+            <ImageView fitHeight="73.0" fitWidth="75.0" GridPane.rowIndex="3" GridPane.columnIndex="6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../resources/images/round_border.png" />
+                     </image>
+                  </ImageView>
+            <TextField fx:id="armorField" maxWidth="45.0" Alignment="CENTER" GridPane.rowIndex="3" GridPane.columnIndex="6"/>
+                  
+         </children>
+      </GridPane>
+      <ButtonBar layoutX="8.0" layoutY="210.0" prefHeight="40.0" prefWidth="217.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+        <buttons>
+          <Button defaultButton="true" mnemonicParsing="false" onAction="#handleOk" text="OK" />
+            <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

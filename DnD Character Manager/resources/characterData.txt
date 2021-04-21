@@ -1,0 +1,4 @@
+Name;;Class & Level;;Alignment;;Race;;Background;;0;;0101;;0,0,0,0,0,0,0,0,0,0,0,0,;;Saving Throws;;Skills;;Hit Dice;;Death Saves;;Attacks;;Other Proficiencies & Languages;;Features & Traits;;Equipment;;Backstory;;
+Hans;;Fighter 1;;LG;;Human;;Background;;0;;0201;;11,15,8,18,12,20,0,0,0,0,0,0,;;Saving Throws;;Skills;;Hit Dice;;Death Saves;;Attacks;;Other Proficiencies & Languages;;Features and Traits;;Equipment;;Backstory;;
+Ruth;;Druid 1;;CG;;Elf;;Background;;0;;0202;;10,15,8,18,12,20,0,0,0,0,0,0,;;Saving Throws;;Skills;;Hit Dice;;Death Saves;;Attacks;;Other Proficiencies & Languages;;Features and Traits;;Equipment;;Backstory;;
+Name;;Class & Level;;Alignment;;Race;;Background;;0;;0301;;0,0,0,0,0,0,0,0,0,0,0,0,;;Saving Throws;;Skills;;Hit Dice;;Death Saves;;Attacks;;Other Proficiencies & Languages;;Features & Traits;;Equipment;;Backstory;;
